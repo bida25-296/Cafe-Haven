@@ -3,14 +3,14 @@ selector{
 }
 body{
     font-family: Arial,sans-serif;
-    color: #333;
+    color: #531b45ce;
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 header{
-    background-color: #af4c7a65;
+    background-color: #8b305ba1;
     color:white;
     padding: 20px;
     text-align: center;
