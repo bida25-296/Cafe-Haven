@@ -1,71 +1,64 @@
-selector{
-    property: value;
-}
-body{
-    font-family: Arial,sans-serif;
-    color: #531b45ce;
-    background-color: #f9f9f9;
+ /* Importing Google fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,92.4,300..800;1,92.4,300..800&family=Roboto:ital,wdth,wght@0,92,100..900;1,92,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-}
-header{
-    background-color: #8b305ba1;
-    color:white;
-    padding: 20px;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-header h1 {
-    margin: 0;
+:root {
 }
 
-nav a {
-    color: white;
+/* Stylings for whole site*/
+ul{
+    list-style: none;
+}
+
+a {
     text-decoration: none;
-    margin: 0 10px;
 }
 
-nav a:hover{
-    text-decoration: underline;
-}
-main{
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
-main img {
-    max-width: 100%;
-    height:auto;
-    display:block;
-    margin: 20px 0 ;
-}
-footer{
-    background-color: #330520c5;
-    color:white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom:0;
+img {
     width: 100%;
 }
-p{
-    font-size: 1.1em;
-}
-a{
-    color:#4CAF50;
-    text-decoration:none;
+
+header {
+    background-color:#3b141c;
 }
 
-a:hover{
-    text-decoration:underline;
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
-img{
-    border:5px solid #4CAF50;
-    border-radius:10px;
+.navbar .nav-logo .logo-text{
+    color:white
 }
-main a[href^="mailto:"]{
-    color: #ff5722;
-    font-weight: bold;
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .navlink {
+    padding: 10px 18px;
+    color:white;
+    font-size: 1.12rem;
+    background-color:#f3961c;
+    border-radius: 30px; 
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .navlink:hover{
+    color:#3b141c;
+    background-color:#f3961c;
 }
