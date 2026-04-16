@@ -146,11 +146,14 @@ header .navbar {
 
 /* About*/
 .about{
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: center;
 }
 
 .about-text{
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -159,6 +162,10 @@ header .navbar {
 .about-text a{
     text-align: center;
 
+}
+
+.about-img{
+    flex: 1;
 }
 
 .about-img{
@@ -175,8 +182,8 @@ header .navbar {
 
 
 .secondary-btn:hover{
-    background:#ffff;
-    color:#f3961c
+    background:#f3961c;
+    color:#3e2723;
 }
 
 #about{
