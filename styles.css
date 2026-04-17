@@ -42,7 +42,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5; 
-    background-color:#3b141c;
+    background-color:#ffb6c1;
 }
 
 header .navbar {
@@ -265,7 +265,7 @@ a {
 }
 
 footer {
-    background-color:#3b141c;
+    background-color:#ffb6c1;
     color:white;
     text-align: center;
     padding: 10px;
