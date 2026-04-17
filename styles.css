@@ -264,3 +264,12 @@ a {
     margin-bottom: 30px;
 }
 
+footer {
+    background-color:#3b141c;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
