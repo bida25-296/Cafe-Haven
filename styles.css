@@ -191,43 +191,35 @@ header .navbar {
 }
 
 /* Menu */
-.menu {
+body {
     width:80%;
-    background-color:#DEB887;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    background-color:beige;
+    margin: 0px;
+    padding: 0px;
 }
 
-h1, h2, p{
+header{
     text-align: center;
+    background-color:transparent;
+    color: white;
+    padding: 0px 0px;
 }
 
-.item p{
-    display: inline-block;
-    margin: 5px 0;
-    font-size: 18px;
+.Container{
+    max-width: 280px;
+    background-color: transparent;
+    margin: 10px auto;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
 }
 
-.flavor, .desert{
-    width: 50%;
-    text-align: left;
+.Menu-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:5px;
 }
 
-.price{
-    width: 50%;
-    text-align: right;
-}
-
-hr {
-    height: 2px;
-    background-color:#4e342e;
-    border-color:#4e342e;
-}
-
-a {
-    color: rgb(220, 227, 230);
-}
 
 /* Gallery */
 .gallery-grid {
