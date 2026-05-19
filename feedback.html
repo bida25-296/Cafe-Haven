@@ -6,7 +6,113 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+    .container {
+        background: white;
+        padding: 20px;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h2{
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .star-rating {
+        display: flex;
+        justify-content: left;
+        flex-direction: row-reverse;
+        font-size: 25px;
+    }
+
+    .star-rating input {
+        display: none;
+    }
+
+    .star-rating label {
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .star-rating input:checked ~ label, .star-rating label:hover, .star-rating label:hover ~ label {
+        color: gold;
+    }
+
+    textarea {
+        width: 100%;
+        height: 80px;
+        font-family: arial;
+        margin-top: 10px;
+        border: 10px solid white;
+        resize: none;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background: blue;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background: blue;
+    }
+
+
+</style>
 <body>
+
+    <div class="container">
+        <h2>Leave a Review</h2>
+        <form action="#">
+            <div class="star-rating">
+                <input type="radio" id="star5" value="5">
+                <label for="star5">&#9733</label>
+
+                <input type="radio" id="star4" value="4">
+                <label for="star4">&#9733</label>
+
+                <input type="radio" id="star3" value="3">
+                <label for="star3">&#9733</label>
+
+                <input type="radio" id="star2" value="2">
+                <label for="star2">&#9733</label>
+
+                <input type="radio" id="star1" value="1">
+                <label for="star1">&#9733</label>
+
+            </div>
+
+            <textarea name="#" id="#" placeholder="write your feedback...." required></textarea>
+
+            <button type="submit">Submit Review</button> 
+        </form>
+    </div>
+
+
+
+
     <header>
         <nav class="navbar">
             <ul class="nav-menu">
@@ -40,29 +146,9 @@
 
     </header>
 
-    /*Feedback Section*/
-    <section>
-        <div class="panel-container">
-        <strong>How satisfied are you with our service?</strong>
-        <div class="rating-container">
-            <div class="rating active">
-                <img src="Images/unhappy.jpg" alt="Unhappy">
-                <small>Unhappy</small>
-            </div>
-            <div class="rating active">
-                <img src="Images/neutral.jpg" alt="Neutral">
-                <small>Neutral</small>
-            </div>
-            <div class="rating active">
-                <img src="Images/satisfied.jpg" alt="Satisfied">
-                <small>Satisfied</small>
-            </div>
-        </div>
-        <button class="btn" id="send">Send Review</button>
-        </div>
-    </section>
+    
 
-    /*Footer Section*/
+    <!--Footer Section-->
     <footer>
         <div class="footer-container container">
             <p>&copy; 2026 Rebaone      Copyright       privacy</p>
