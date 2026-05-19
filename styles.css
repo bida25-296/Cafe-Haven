@@ -149,8 +149,8 @@ header .navbar {
 }
 
 .about-img img{
-    width: 100%;
-    border-radius: 10px;
+    width: 90%;
+    border-radius: 5px;
 }
 
 
@@ -232,11 +232,13 @@ header .navbar {
     margin-bottom: 30px;
 }
 
+
+
 /* Contact */
 .contact form{
     display: grid;
     gap: 15px;
-    max-width: 500px;
+    max-width: 300px;
     margin: auto;
 }
 
@@ -254,6 +256,7 @@ header .navbar {
 
 #contact {
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 
