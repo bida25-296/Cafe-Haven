@@ -239,7 +239,7 @@ header .navbar {
     display: grid;
     gap: 15px;
     max-width: 300px;
-    margin: auto;
+    margin: 100px auto;
 }
 
 .contact input,
@@ -255,27 +255,60 @@ header .navbar {
 }
 
 #contact {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px; /*pushes the contact section down*/
+    margin-top: 100px;
 }
 
-
-footer {
-    background-color:#3b141c;
-    color:white;
-    text-align: center;
+/* footer section styling*/
+.footer-section{
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background:#3b141c;
 }
 
-.social-links img{
-    height: 25px;
-    margin: 10px 5px;
+.footer-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.social-links img:hover {
-    transform: scale(1.2);
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+    color:#3b141c;
+    transition: 0.2s ease;
 }
 
+.footer-section .social-link-list {
+    display:flex;
+    gap:25px;
+}
+
+.footer-section .social-link-list .social-link{
+    font-size:1.5rem;
+}
+
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+    color:#3b141c;
+}
+
+.footer-section .policy-text .separator{
+    margin: 0 5px;
+    color: white;
+
+}
+
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .footer-section .section-content{
+    fext-direction: column;
+    gap: 20px;
+  } 
+}
