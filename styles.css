@@ -171,31 +171,70 @@ header .navbar {
 }
 
 /* Menu */
-.Container {
+.menu-section {
+    padding: 60px 20px;
+    background-color: #faf7f2;
+}
+
+.menu-section .container {
+    max-width: 800px;
     width: 100%;
-    background-color: #3e2723;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px;
 }
 
-.Menu-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.Menu-item span {
-    font-weight: bold;
-}
-    
-
-/* Section */
+/*Section title*/
 .section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 40px;
     color:#4e342e;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
 }
+
+/*Two column layout*/
+.menu-grid {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+/*Menu item row*/
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+/*Item name and price*/
+.item-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:#3e2723;
+}
+
+.item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:#8b5a2b;
+}
+
 
 /* Gallery */
 .gallery-grid {
@@ -235,11 +274,29 @@ header .navbar {
 
 
 /* Contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+   
+}
+
+/*center the section title*/
+#contact .section-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .contact form{
     display: grid;
     gap: 15px;
+    width: 100%;
     max-width: 300px;
-    margin: 100px auto;
+    margin: 0 auto;
 }
 
 .contact input,
@@ -254,12 +311,9 @@ header .navbar {
     cursor: pointer;
 }
 
-#contact {
-    margin-bottom: 30px; /*pushes the contact section down*/
-    margin-top: 100px;
-}
 
 /* footer section styling*/
+
 .footer-section{
     padding: 20px 0;
     background:#3b141c;
@@ -272,7 +326,7 @@ header .navbar {
 }
 
 .footer-section :where(.copyright-text, .social-link, .policy-link) {
-    color:#3b141c;
+    color: white;
     transition: 0.2s ease;
 }
 
@@ -296,7 +350,6 @@ header .navbar {
 
 }
 
-
 /* Responsive*/
 @media (max-width: 768px) {
     .about {
@@ -308,7 +361,7 @@ header .navbar {
     }
 
     .footer-section .section-content{
-    fext-direction: column;
+    flex-direction: column;
     gap: 20px;
   } 
 }
