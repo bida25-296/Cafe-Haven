@@ -5,60 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAFE HAVEN</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
-
-        form {
-            width: 300px;
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #f4f4f4;
+            font-family: 'Arial', sans-serif;
         }
 
-        label {
-            display: block;
-            margin-top: 15px;
-        }
-        
+        .feedback-page {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+     }
 
-        input, textarea {
-            width: 300px;
-            padding: 15px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+        .feedback-container {
+        max-width: 600px;
+        width: 80%;
+        background-color: white;
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
 
-        textarea {
-            height: 50px;
-            resize: none;
-        }
+        .feedback-container h2{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        color:#4e342e;
+   }
 
-        .buttons {
-            margin-top: 20px;
-            text-align: center;
-        }
+        /*form fields*/
+       .form-group{
+        margin-bottom: 15px;
+   }
 
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
 
-        .submit-btn {
-            background-color:#f3961c;
-            color: white;
-        }
+.form-group textarea{
+    resize: vertical;
+    min-height: 100px;
+}
 
-        button:hover {
-            opacity: 0.9;
-        }
-    </style>
+/*Submit button*/
+.submit-btn {
+    width: 80%;
+    padding: 12px;
+    background-color: #f3961c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover{
+    background-color: #f3961c;
+}
+
+/*footer*/
+Footer{
+    background-color:#3b141c;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+</style>
 </head>
 <body>
     <header>
@@ -93,19 +118,28 @@
         </nav>
     </header>
 
-    <form action="acknowledgement.html" method="get">
-        <label for="name">your name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">your email address</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">your message....</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <div class="buttons">
-            <button type="submit" class="submit-btn">Submit</button>
+    <form action="https://formsubmit.co/rebaonetaboka@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://cafehaven.com/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
         </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <select name="experience" required>
+                <option value="">How was your experience?</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Feedback..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit Feedback</button>
     </form>
         
 

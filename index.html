@@ -158,34 +158,29 @@
     </section>
 
     <!--Feedback Section-->
-    <section>
-    <div class="container">
-        <h2>Leave a Review</h2>
-        <form action="#">
-            <div class="star-rating">
-                <input type="radio" id="star5" value="5">
-                <label for="star5">&#9733</label>
-
-                <input type="radio" id="star4" value="4">
-                <label for="star4">&#9733</label>
-
-                <input type="radio" id="star3" value="3">
-                <label for="star3">&#9733</label>
-
-                <input type="radio" id="star2" value="2">
-                <label for="star2">&#9733</label>
-
-                <input type="radio" id="star1" value="1">
-                <label for="star1">&#9733</label>
-
-            </div>
-
-            <textarea name="#" id="#" placeholder="write your feedback...." required></textarea>
-
-            <button type="submit">Submit Review</button> 
-        </form>
-    </div>
-    </section>
+    <form action="https://formsubmit.co/rebaonetaboka@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://cafehaven.com/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <select name="experience" required>
+                <option value="">How was your experience?</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Feedback..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit Feedback</button>
+    </form>
 
     <!--Contact Section-->
     <section id="contact" class="contact container">
@@ -199,14 +194,11 @@
     </section>
     
     <!--Footer Section-->
-   <footer>
+    <footer>
         <div class="footer-section">
             <p>@ 2026 CAFE HAVEN. Privacy Policy | Refund Policy</p>
         </div>
-   </footer>
+   </footer>    
 
-    
 </body> 
-
-
 </html> 
