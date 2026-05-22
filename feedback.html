@@ -6,84 +6,6 @@
     <title>CAFE HAVEN</title>
     <link rel="stylesheet" href="styles.css">
 
-    <style>
-        body{
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background: #f4f4f4;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .feedback-page {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 100px;
-     }
-
-        .feedback-container {
-        max-width: 600px;
-        width: 80%;
-        background-color: white;
-        border-radius: 16px;
-        padding: 40px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-
-        .feedback-container h2{
-        margin-top: 50px;
-        margin-bottom: 30px;
-        color:#4e342e;
-   }
-
-        /*form fields*/
-       .form-group{
-        margin-bottom: 15px;
-   }
-
-.form-group input,
-.form-group textarea,
-.form-group select{
-    width: 80%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-.form-group textarea{
-    resize: vertical;
-    min-height: 100px;
-}
-
-/*Submit button*/
-.submit-btn {
-    width: 80%;
-    padding: 12px;
-    background-color: #f3961c;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.submit-btn:hover{
-    background-color: #f3961c;
-}
-
-/*footer*/
-Footer{
-    background-color:#3b141c;
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
-
-</style>
 </head>
 <body>
     <header>
@@ -118,6 +40,11 @@ Footer{
         </nav>
     </header>
 
+    <!--Feedback Section-->
+     <section id="feedback" class="feedback-page">
+        <div class="feedback-container">
+            <h2>We value your feedback!</h2>
+
     <form action="https://formsubmit.co/rebaonetaboka@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://cafehaven.com/thankyou.html">
         <input type="hidden" name="_captcha" value="false">
@@ -141,7 +68,8 @@ Footer{
         </div>
         <button type="submit" class="btn">Submit Feedback</button>
     </form>
-        
+        </div>
+    </section>    
 
     <!--Footer Section-->
      <footer>

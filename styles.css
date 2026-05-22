@@ -129,7 +129,7 @@ header .navbar {
     max-width: 900px;
     width: 100%;
     text-align: center;
-    background: white;
+    background:#e8d8c3;
     border-radius: 24px;
     padding: 50px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -181,6 +181,7 @@ header .navbar {
     min-height: 80vh;
     padding: 100px 20px;
     margin: 0 auto;
+    background-color: #e8d8c3;
 }
 
 
@@ -202,11 +203,14 @@ main{
 
 
 /* Menu */
+#menu {
+    background-color: #e8d8c3;
+}
 .menu-section {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    background-color: #faf7f2;
+    background-color: white;
 }
 
 .menu-section .container {
@@ -293,7 +297,7 @@ main{
 }
 
 .gallery-item {
-    background:#ffffff;
+    background:white;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
@@ -316,42 +320,53 @@ main{
     font-weight: bold;
 }
 
-#Gallery {
+#gallery {
     margin-bottom: 30px;
+    background-color: #e8d8c3;
 }
 
-.feedback-page {
+/*feedback section*/
+ body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:whitesmoke;
+    font-family: 'Arial', sans-serif;
+}
+
+    .feedback-page {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 20px;
-}
+    padding-top: 100px;
+ }
 
-.feedback-container {
+    .feedback-container {
     max-width: 600px;
-    width: 80%;
-    background-color: white;
+    width: 100%;
+    background-color:whitesmoke;
     border-radius: 16px;
     padding: 40px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.feedback-container h2{
+    .feedback-container h2{
+    margin-top: 50px;
     margin-bottom: 30px;
     color:#4e342e;
 }
 
-/*form fields*/
-.form-group{
-    margin-bottom: 15px;
+    /*form fields*/
+     .form-group{
+     margin-bottom: 15px;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select{
-    width: 80%;
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -365,7 +380,7 @@ main{
 
 /*Submit button*/
 .submit-btn {
-    width: 80%;
+    width: 100%;
     padding: 12px;
     background-color: #f3961c;
     color: white;
@@ -380,15 +395,12 @@ main{
 }
 
 /*footer*/
-Footer{
+footer{
     background-color:#3b141c;
     text-align: center;
     padding: 20px;
     color: white;
 }
-
-
-
 
 
 /* Contact */
@@ -400,6 +412,7 @@ Footer{
     min-height: 100vh;
     margin: 0;
     padding: 20px;
+    background-color: #e8d8c3;
    
 }
 
@@ -411,22 +424,29 @@ Footer{
 
 .contact form{
     display: grid;
-    gap: 15px;
+    gap: 25px;
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .contact input,
 .contact textarea{
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .contact button{
     border: none;
     cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.contact textarea{
+    min-height: 120px;
 }
 
 
@@ -476,4 +496,25 @@ main a[href^="mailto:"]{
     flex-direction: column;
     gap: 20px;
   } 
+
+  /*making navigation stack vertically on mobile phone*/
+  header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+  }
+
+   .feedback-container {
+    max-width: 600px;
+    width: 100%;
+    background-color:whitesmoke;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+    
+
 }
