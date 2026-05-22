@@ -496,8 +496,16 @@ main a[href^="mailto:"]{
     flex-direction: column;
     gap: 20px;
   } 
+  /* Navbar styling */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5; 
+    background-color:#3b141c;
+}
 
   /*making navigation stack vertically on mobile phone*/
+  
   header .navbar {
     display: flex;
     padding: 20px;
